@@ -364,6 +364,10 @@ function(){this.$get=function(){return{}}});z.directive("ngView",B);z.directive(
 var awake = angular.module('awake', ['ngRoute', 'fullPage.js'])
     .config(['$locationProvider', '$routeProvider',
         function config($locationProvider, $routeProvider) {
+            $locationProvider.html5Mode({
+                enabled: true,
+                requireBase: false
+            });
             $locationProvider.hashPrefix('!');
 
             $routeProvider.
@@ -386,7 +390,8 @@ var awake = angular.module('awake', ['ngRoute', 'fullPage.js'])
             sectionSelector: 'section',
             //verticalCentered: false,
             paddingTop: xh,
-            paddingBottom: xb
+            paddingBottom: xb,
+            navigation: true
         }
     })
     .controller('dev', function(){

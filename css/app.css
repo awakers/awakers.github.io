@@ -1037,9 +1037,13 @@ footer {
   color: black;
   padding: 0.5rem;
   font-size: 1.2vmax;
+  font-family: Monospaced;
   text-decoration: none;
   border: 1px solid white;
   border-radius: 2rem; }
   .btn:hover {
     background: transparent;
     color: white; }
+
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
+  background: white; }
