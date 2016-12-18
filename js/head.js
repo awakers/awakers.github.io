@@ -364,10 +364,6 @@ function(){this.$get=function(){return{}}});z.directive("ngView",B);z.directive(
 var awake = angular.module('awake', ['ngRoute', 'fullPage.js'])
     .config(['$locationProvider', '$routeProvider',
         function config($locationProvider, $routeProvider) {
-            /*$locationProvider.html5Mode({
-                enabled: true,
-                requireBase: false
-            });*/
             $locationProvider.hashPrefix('!');
 
             $routeProvider.

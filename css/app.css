@@ -1054,9 +1054,7 @@ footer {
   background: white; }
 
 .splash {
-  display: none;
-  opacity: 0;
-  visibility: hidden; }
+  display: none; }
 
 [ng-cloak].splash {
   position: absolute;
