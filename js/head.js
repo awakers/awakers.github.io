@@ -402,6 +402,7 @@ var awake = angular.module('awake', ['ngRoute', 'fullPage.js'])
             sectionSelector: 'section',
             //verticalCentered: false,
             paddingTop: xh,
-            paddingBottom: xb
+            paddingBottom: xb,
+            navigation: true
         }
     });
