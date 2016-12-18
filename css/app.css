@@ -1067,11 +1067,17 @@ footer {
   text-align: center;
   color: white;
   display: block !important; }
-  [ng-cloak].splash img {
+  [ng-cloak].splash #loader {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); }
+
+.x-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
 
 .f-img {
   max-width: 30%;
