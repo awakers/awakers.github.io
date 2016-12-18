@@ -1074,7 +1074,8 @@ footer {
     transform: translate(-50%, -50%); }
 
 .f-img {
-  max-width: 30%; }
+  max-width: 30%;
+  height: auto; }
 
 .unstyled {
   list-style-type: none;
