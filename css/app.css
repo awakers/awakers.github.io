@@ -1067,7 +1067,7 @@ footer {
   text-align: center;
   color: white;
   display: block !important; }
-  [ng-cloak].splash:first-child {
+  [ng-cloak].splash #loader {
     position: absolute;
     top: 50%;
     left: 50%;
