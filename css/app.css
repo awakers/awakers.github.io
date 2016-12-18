@@ -734,6 +734,11 @@ p {
 .text-justify {
   text-align: justify; }
 
+h1, h2, h3, h4, h5 {
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  margin: 1.5rem; }
+
 /*!
  * fullPage 2.9.0
  * https://github.com/alvarotrigo/fullPage.js
@@ -1067,3 +1072,11 @@ footer {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); }
+
+.f-img {
+  max-width: 30%; }
+
+.unstyled {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
