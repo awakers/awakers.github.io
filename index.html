@@ -12,8 +12,6 @@
     <link rel="mask-icon" href="/safari-pinned-tab.svg?v=KmbKRvOqey" color="#5bbad5">
     <link rel="shortcut icon" href="/favicon.ico?v=KmbKRvOqey">
     <meta name="theme-color" content="#ffffff">
-
-    <script src="js/head.js"></script>
 </head>
 <body>
 <div class="splash" ng-cloak="">
@@ -38,11 +36,12 @@
     <div class="col-xs-3"><a href="mailto:hello@awake.studio">hello@awake.studio</a></div>
     <div class="col-xs-3">Vk Fb Bh</div>
 </footer>
+<script src="js/head.js"></script>
 <script>
     window.onload=function(){
-        window.setTimeout(function(){
-            angular.bootstrap(document,["awake"]);
-        },5000);
+                window.setTimeout(function(){
+                angular.bootstrap(document, ['awake']);
+                },5000);
     }
 </script>
 <!-- Yandex.Metrika counter -->
