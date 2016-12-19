@@ -375,6 +375,10 @@ var awake = angular.module('awake', ['ngRoute', 'fullPage.js'])
                 templateUrl:'pages/dev.html',
                 controller: 'dev'
             }).
+            when('/order', {
+                templateUrl:'pages/order.html',
+                controller: 'order'
+            }).
             otherwise('/');
         }
     ])
@@ -391,6 +395,18 @@ var awake = angular.module('awake', ['ngRoute', 'fullPage.js'])
         }
     })
     .controller('dev', function(){
+        var _this = this;
+        var xh = $('nav').outerHeight();
+        var xb = $('footer').outerHeight();
+        _this.mainOptions = {
+            sectionSelector: 'section',
+            //verticalCentered: false,
+            paddingTop: xh,
+            paddingBottom: xb,
+            navigation: true
+        }
+    })
+    .controller('order', function(){
         var _this = this;
         var xh = $('nav').outerHeight();
         var xb = $('footer').outerHeight();
