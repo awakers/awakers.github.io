@@ -416,7 +416,8 @@ var awake = angular.module('awake', ['ngRoute', 'fullPage.js', 'backand'])
             //verticalCentered: false,
             paddingTop: xh,
             paddingBottom: xb,
-            navigation: true
+            navigation: true,
+            scrollBar: true
         }
     })
     .controller('order', function(){
