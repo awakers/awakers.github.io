@@ -389,6 +389,10 @@ var awake = angular.module('awake', ['ngRoute', 'fullPage.js', 'backand'])
                 templateUrl:'pages/order.html',
                 controller: 'order'
             }).
+            when('/support', {
+                templateUrl:'pages/support.html',
+                controller: 'support'
+            }).
             otherwise('/');
             BackandProvider.setAppName('awakest');
             BackandProvider.setSignUpToken('1e9e391b-ed52-4ea9-836b-827433a4f1ce');
@@ -408,6 +412,19 @@ var awake = angular.module('awake', ['ngRoute', 'fullPage.js', 'backand'])
         }
     })
     .controller('dev', function(){
+        var _this = this;
+        var xh = $('nav').outerHeight();
+        var xb = $('footer').outerHeight();
+        _this.mainOptions = {
+            sectionSelector: 'section',
+            //verticalCentered: false,
+            paddingTop: xh,
+            paddingBottom: xb,
+            navigation: true,
+            scrollBar: true
+        }
+    })
+    .controller('support', function(){
         var _this = this;
         var xh = $('nav').outerHeight();
         var xb = $('footer').outerHeight();
