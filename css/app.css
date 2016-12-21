@@ -8,7 +8,7 @@
   padding-right: 2rem;
   padding-left: 2rem; }
 
-.row {
+.row, .form .field, .form .input-errors {
   box-sizing: border-box;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -25,7 +25,7 @@
   margin-right: -0.5rem;
   margin-left: -0.5rem; }
 
-.row.reverse {
+.row.reverse, .form .reverse.field, .form .reverse.input-errors {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
   -ms-flex-direction: row-reverse;
@@ -44,12 +44,16 @@
 .col-xs-4,
 .col-xs-5,
 .col-xs-6,
+.form .field label,
+.form .field input,
+.form .field textarea,
 .col-xs-7,
 .col-xs-8,
 .col-xs-9,
 .col-xs-10,
 .col-xs-11,
 .col-xs-12,
+.form .input_err,
 .col-xs-offset-0,
 .col-xs-offset-1,
 .col-xs-offset-2,
@@ -103,7 +107,7 @@
   flex-basis: 41.66666667%;
   max-width: 41.66666667%; }
 
-.col-xs-6 {
+.col-xs-6, .form .field label, .form .field input, .form .field textarea {
   -ms-flex-preferred-size: 50%;
   flex-basis: 50%;
   max-width: 50%; }
@@ -133,7 +137,7 @@
   flex-basis: 91.66666667%;
   max-width: 91.66666667%; }
 
-.col-xs-12 {
+.col-xs-12, .form .input_err {
   -ms-flex-preferred-size: 100%;
   flex-basis: 100%;
   max-width: 100%; }
@@ -1168,3 +1172,39 @@ footer {
   list-style-type: none;
   margin: 0;
   padding: 0; }
+
+.form {
+  width: 100%; }
+  .form .field {
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1rem; }
+    .form .field input, .form .field textarea {
+      color: white;
+      font-size: smaller;
+      padding: 0.25rem;
+      border-radius: 0;
+      border: 0.1rem solid silver;
+      background-color: transparent; }
+  .form .input-errors {
+    width: 100%; }
+    .form .input-errors p {
+      width: 100%; }
+  .form .input_err {
+    text-align: right;
+    color: red;
+    font-weight: 100; }
+  .form .ng-touched.ng-invalid {
+    border-color: red; }
+  .form button {
+    border: 0.1rem solid white;
+    background-color: transparent;
+    font-size: smaller;
+    text-transform: uppercase;
+    color: white;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem; }
+    .form button:hover {
+      color: black;
+      border-color: black; }

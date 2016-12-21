@@ -1,9 +1,40 @@
 <div ng-controller="order as order">
     <div full-page id="fullpage" options="order.mainOptions">
         <section class="fp_section">
-            <div class="row center-xs">
-                <div class="col-md-10">
-                  Форма заказа
+            <div class="row middle-xs center-xs">
+                <div class="col-xs-10">
+                  <form novalidate name="orderForm" class="form">
+                      <div class="field">
+                          <label>Ваше имя:</label>
+                          <input type="text" ng-model="client_name" name="name" required="required" ng-minlength="3"
+                                 ng-maxlength="8">
+                          <div class="input-errors" ng-messages="orderForm.name.$error" ng-if="orderForm.name.$touched">
+                              <p class="input_err" ng-message="minlength">Пожалуйста, укажите полное имя</p>
+                              <p class="input_err" ng-message="maxlength">Имена обычно короче</p>
+                              <p class="input_err" ng-message="required">Укажите ваше имя</p>
+                          </div>
+                      </div>
+                      <div class="field">
+                          <label>Электронная почта:</label>
+                          <input type="email" ng-model="client_email" name="email">
+                          <div class="input-errors" ng-messages="orderForm.email.$error" ng-if="orderForm.email.$touched">
+                              <p class="input_err" ng-message="email">Укажите корректный адрес электронной почты</p>
+                          </div>
+                      </div>
+                      <div class="field">
+                          <label>Контактный телефон:</label>
+                          <input type="phone" ng-model="client_phone" name="phone" required="required">
+                          <div class="input-errors" ng-messages="orderForm.phone.$error" ng-if="orderForm.phone.$touched">
+                              <!--<p class="input_err" ng-message="pattern">Укажите корректный номер телефона</p>-->
+                              <p class="input_err" ng-message="required">Укажите номер вашего телефона</p>
+                          </div>
+                      </div>
+                      <div class="field">
+                          <label>Что хотели бы заказать:</label>
+                          <textarea rows="3" name="order" ng-model="client_order"></textarea>
+                      </div>
+                      <button type="submit">Отправить</button>
+                  </form>
                 </div>
             </div>
         </section>
