@@ -1179,6 +1179,8 @@ footer {
     width: 100%;
     margin-top: 1rem;
     margin-bottom: 1rem; }
+    .form .field label {
+      text-align: left; }
     .form .field input, .form .field textarea {
       color: white;
       font-size: smaller;
