@@ -459,6 +459,6 @@ var awake = angular.module('awake', ['ngRoute', 'fullPage.js', 'backand', 'ngMes
             //verticalCentered: false,
             paddingTop: xh,
             paddingBottom: xb,
-            navigation: true
+            navigation: false
         }
     });

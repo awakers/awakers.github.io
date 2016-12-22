@@ -1,6 +1,6 @@
 <div ng-controller="order as order">
     <div full-page id="fullpage" options="order.mainOptions">
-        <section class="fp_section">
+<!--        <section class="fp_section">
             <div class="row middle-xs center-xs">
                 <div class="col-xs-12 col-sm-10 col-md-6 col-lg-6">
                   <form novalidate name="orderForm" class="form">
@@ -25,7 +25,7 @@
                           <label>Контактный телефон:</label>
                           <input type="phone" ng-model="client_phone" name="phone" required="required">
                           <div class="input-errors" ng-messages="orderForm.phone.$error" ng-if="orderForm.phone.$touched">
-                              <!--<p class="input_err" ng-message="pattern">Укажите корректный номер телефона</p>-->
+                              &lt;!&ndash;<p class="input_err" ng-message="pattern">Укажите корректный номер телефона</p>&ndash;&gt;
                               <p class="input_err" ng-message="required">Укажите номер вашего телефона</p>
                           </div>
                       </div>
@@ -37,6 +37,18 @@
                   </form>
                 </div>
             </div>
+        </section>-->
+        <section class="fp_section">
+            <script id="bx24_form_inline" data-skip-moving="true">
+                (function(w,d,u,b){w['Bitrix24FormObject']=b;w[b] = w[b] || function(){arguments[0].ref=u;
+                        (w[b].forms=w[b].forms||[]).push(arguments[0])};
+                    if(w[b]['forms']) return;
+                    s=d.createElement('script');r=1*new Date();s.async=1;s.src=u+'?'+r;
+                    h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
+                })(window,document,'https://awake.bitrix24.ru/bitrix/js/crm/form_loader.js','b24form');
+
+                b24form({"id":"10","lang":"ru","sec":"xzgyze","type":"inline"});
+            </script>
         </section>
     </div>
 </div>
