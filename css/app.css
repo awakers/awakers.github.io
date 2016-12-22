@@ -766,6 +766,9 @@ p {
 h1, h2, h3, h4, h5 {
   -webkit-margin-before: 0;
   -webkit-margin-after: 0; }
+  h1 a, h2 a, h3 a, h4 a, h5 a {
+    text-decoration: none;
+    color: inherit; }
 
 .pd-3 {
   padding-bottom: 3rem;
@@ -1210,3 +1213,6 @@ footer {
     .form button:hover {
       color: black;
       border-color: black; }
+
+.b24-widget-button-openline_vkgroup {
+  display: none !important; }
